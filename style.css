@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f7fa;
+    color: #1c2b36;
+}
+
+/* HEADER CORPORATIVO */
+header {
+    background: #0a2e5c;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 4px solid #00b894;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 15px;
+    opacity: 0.85;
+}
+
+/* CONTAINER CENTRAL */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+}
+
+/* TÍTULOS */
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e3e9ef;
+    padding-bottom: 8px;
+    color: #0a2e5c;
+}
+
+/* FORMULÁRIO ORGANIZADO */
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+form input,
+form select {
+    padding: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccd6dd;
+    font-size: 14px;
+    transition: 0.3s;
+    background: #f9fbfc;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #00b894;
+    outline: none;
+    background: white;
+    box-shadow: 0 0 0 2px rgba(0,184,148,0.2);
+}
+
+/* BOTÃO PRINCIPAL */
+form button {
+    grid-column: span 2;
+    padding: 14px;
+    border-radius: 6px;
+    border: none;
+    background: #00b894;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #019874;
+}
+
+/* CARD DE ATENDIMENTO */
+.atendimento {
+    background: #f9fbfc;
+    border-left: 4px solid #0a2e5c;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.atendimento:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.atendimento p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+/* STATUS */
+.pendente {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.concluido {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* BOTÃO CANCELAR */
+.atendimento button {
+    margin-top: 12px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+    background: #d63031;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.atendimento button:hover {
+    background: #b71c1c;
+}
+
+/* RESPONSIVO */
+@media (max-width: 700px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    form button {
+        grid-column: span 1;
+    }
+}

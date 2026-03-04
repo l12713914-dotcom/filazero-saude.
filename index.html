@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FilaZero Saúde</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>FilaZero Saúde</h1>
+    <p>Agendamento Inteligente de Atendimento</p>
+</header>
+
+<div class="container">
+
+<h2>Agendar Atendimento</h2>
+
+<form id="form">
+    <input type="text" id="nome" placeholder="Nome Completo" required>
+    <input type="text" id="cpf" placeholder="CPF" required>
+    <input type="date" id="nascimento" required>
+    <input type="tel" id="telefone" placeholder="Telefone" required>
+
+    <select id="tipoAtendimento" required>
+        <option value="">Tipo de Atendimento</option>
+        <option>Consulta</option>
+        <option>Exame</option>
+        <option>Retorno</option>
+        <option>Vacina</option>
+    </select>
+
+    <select id="especialidade" required>
+        <option value="">Especialidade</option>
+        <option>Clínico Geral</option>
+        <option>Pediatria</option>
+        <option>Cardiologia</option>
+        <option>Ginecologia</option>
+    </select>
+
+    <input type="date" id="data" required>
+    <input type="time" id="hora" required>
+
+    <button type="submit">Agendar</button>
+</form>
+
+<h2>Meus Atendimentos</h2>
+<div id="lista"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
